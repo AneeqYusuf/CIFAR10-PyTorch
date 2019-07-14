@@ -19,7 +19,7 @@ testset = data_load(transform=transform, folder = folder)
 testloader = torch.utils.data.DataLoader(testset, batch_size=4,
                                           shuffle=False, num_workers=2)
 
-test = os.listdir('/home/aneeq/Downloads/test.rotfaces/test/')
+test = os.listdir(folder)
 output = {}
 
 i = 0
